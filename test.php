@@ -2,10 +2,19 @@
 session_start();
 
 $value = $_GET["b"];
+$v = $value;
+$i=0;
+for($i;$i<=255;$i++)
+{
+    if(chr($i)==$v){
+        $v = $i;
+    }
+}
+
 include 'line.php';
 $db = new mysqli("localhost", "root", null, "mydb");
 $db->set_charset("utf8");
-$result = $db->query("SELECT * FROM useg WHERE useg = '".$value."'");
+$result = $db->query("SELECT * FROM useg WHERE useg = '".$v."'");
 
 if($row = $result->fetch_assoc()){
     $zurlaga = $row["zurlaga"];

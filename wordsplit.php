@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 $msg = $_SESSION['msg'];
 $array = str_split($msg);
 $size = sizeof($array);

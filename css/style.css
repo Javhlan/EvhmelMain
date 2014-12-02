@@ -61,6 +61,26 @@ img{max-width:100%;}
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Huree';
+    src: url('../fonts/CMSHR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Ulaanbaatar';
+    src: url('../fonts/CMSUB.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/*#myText{
+    font-family: 'Ulaanbaatar';
+    font-size: 2em;
+}*/
+#myText{
+    font-family: 'Huree';
+    font-size: 5em;
+}
 /*----//importing-fonts---*/
 body{
 	background:#fff;
@@ -143,6 +163,7 @@ body{
 	background:#F36EA7;
 	color:#FFF;
 }
+
 .sign-ligin-btns ul li a.login:hover{
 	background: #EE639F;
 }
@@ -152,14 +173,17 @@ body{
 	background:url(../images/slider.jpg) no-repeat 0px 0px;
 	background-size: 100% 120%;
 }
-/*--//End-slider--*/
-/*----start-content---*/
+.tools{
+    float:left;
+    margin-top: 2%;
+}
+
 .top-grids{
 	padding: 3em 0 5em 0;
 	position:relative;
 }
 .top-grid{
-	width:40%;
+	width:39%;
 	float:left;
 	margin-right:2%;
 	text-align:center;
@@ -798,6 +822,7 @@ fieldset#body {
 	-moz-border-radius: 0.15em;
 	-o-border-radius: 0.15em;
 }
+
 #loginForm input:hover{
 	border: 1px solid #999;
 } 
@@ -806,6 +831,42 @@ fieldset#body {
 }
 /* Sign In Button */
 #loginForm #login {
+    color: #fff;
+	font-size: 0.875em;
+	font-weight: normal;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	background:#F36EA7;
+	display: inline-block;
+	width: 100%;
+	cursor:pointer;
+	margin: 1em 0 0 0;
+	border: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	border-radius: 0.15em;
+	-webkit-border-radius: 0.15em;
+	-moz-border-radius: 0.15em;
+	-o-border-radius: 0.15em;
+}
+#loginForm #logout{
+    color: #fff;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+#loginForm #logout:hover{
+    color: #000000;
+	font-size: 1.2em;
+	font-weight: normal;
+        background: #fff;
+}
+#loginForm #changepass:hover {
+    background:#000;
+}
+#loginForm #changepass {
     color: #fff;
 	font-size: 0.875em;
 	font-weight: normal;
@@ -953,7 +1014,10 @@ fieldset#signupbody {
 }
 #signupForm input:hover{
 	border: 1px solid #999;
-} 
+}
+#signupForm a:hover{
+    color:#2E9AFE;
+}
 .remeber{
 	margin-top:0.5em;
 }
